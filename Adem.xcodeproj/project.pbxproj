@@ -24,6 +24,15 @@
 		35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6BD2224E4D10078AA98 /* Product.swift */; };
 		35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C02224E4F90078AA98 /* DataService.swift */; };
 		35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C22224E5180078AA98 /* Cloud Storage.swift */; };
+		35C4C8AB2224E5B90025186E /* AcctCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */; };
+		35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AC2224E5E70025186E /* ProductCell.swift */; };
+		35C4C8AF2224E5F80025186E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AE2224E5F80025186E /* tabBar.swift */; };
+		35C4C8B12224E6120025186E /* CellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B02224E6120025186E /* CellLayout.swift */; };
+		35C4C8B32224E62E0025186E /* AcctElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B22224E62E0025186E /* AcctElements.swift */; };
+		35C4C8B52224E64B0025186E /* ItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B42224E64B0025186E /* ItemLayout.swift */; };
+		35C4C8B72224E6620025186E /* settingsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B62224E6620025186E /* settingsLayout.swift */; };
+		35C4C8B92224E6910025186E /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B82224E6910025186E /* TableViewTest.swift */; };
+		35C4C8BB2224E6A90025186E /* pantryCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */; };
 		525E2383F959244B7D24EC39 /* Pods_Adem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC722A76BD90EF6B0C6132 /* Pods_Adem.framework */; };
 		C02A574A7FBF7C4E9816716D /* Pods_AdemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA7CAD43C355AC6322DB607 /* Pods_AdemUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +77,15 @@
 		35AEB6BD2224E4D10078AA98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		35AEB6C02224E4F90078AA98 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		35AEB6C22224E5180078AA98 /* Cloud Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud Storage.swift"; sourceTree = "<group>"; };
+		35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcctCellDesign.swift; sourceTree = "<group>"; };
+		35C4C8AC2224E5E70025186E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		35C4C8AE2224E5F80025186E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		35C4C8B02224E6120025186E /* CellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLayout.swift; sourceTree = "<group>"; };
+		35C4C8B22224E62E0025186E /* AcctElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcctElements.swift; sourceTree = "<group>"; };
+		35C4C8B42224E64B0025186E /* ItemLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLayout.swift; sourceTree = "<group>"; };
+		35C4C8B62224E6620025186E /* settingsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsLayout.swift; sourceTree = "<group>"; };
+		35C4C8B82224E6910025186E /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
+		35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryCellLayout.swift; sourceTree = "<group>"; };
 		5335657E8CA334A2ED869F87 /* Pods-AdemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdemTests/Pods-AdemTests.release.xcconfig"; sourceTree = "<group>"; };
 		6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adem/Pods-Adem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +241,15 @@
 		35AEB6C42224E5300078AA98 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */,
+				35C4C8AC2224E5E70025186E /* ProductCell.swift */,
+				35C4C8AE2224E5F80025186E /* tabBar.swift */,
+				35C4C8B02224E6120025186E /* CellLayout.swift */,
+				35C4C8B22224E62E0025186E /* AcctElements.swift */,
+				35C4C8B42224E64B0025186E /* ItemLayout.swift */,
+				35C4C8B62224E6620025186E /* settingsLayout.swift */,
+				35C4C8B82224E6910025186E /* TableViewTest.swift */,
+				35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -496,10 +523,19 @@
 				35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */,
 				35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */,
 				35AEB6B92224E49B0078AA98 /* BLEHR.swift in Sources */,
+				35C4C8AF2224E5F80025186E /* tabBar.swift in Sources */,
 				35AEB6BC2224E4BD0078AA98 /* DynamicAttributes.swift in Sources */,
+				35C4C8B52224E64B0025186E /* ItemLayout.swift in Sources */,
+				35C4C8BB2224E6A90025186E /* pantryCellLayout.swift in Sources */,
 				35AEB6B32224E4400078AA98 /* privacyTVC.swift in Sources */,
 				35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */,
+				35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */,
+				35C4C8B32224E62E0025186E /* AcctElements.swift in Sources */,
+				35C4C8B12224E6120025186E /* CellLayout.swift in Sources */,
 				35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */,
+				35C4C8B92224E6910025186E /* TableViewTest.swift in Sources */,
+				35C4C8AB2224E5B90025186E /* AcctCellDesign.swift in Sources */,
+				35C4C8B72224E6620025186E /* settingsLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
