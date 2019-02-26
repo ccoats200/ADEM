@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0412C1319208DA6F55BEAC /* Pods_AdemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */; };
 		35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67C2224DF020078AA98 /* AppDelegate.swift */; };
 		35AEB6822224DF020078AA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6802224DF020078AA98 /* Main.storyboard */; };
 		35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */; };
@@ -14,6 +15,17 @@
 		35AEB68A2224DF040078AA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */; };
 		35AEB6952224DF040078AA98 /* AdemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6942224DF040078AA98 /* AdemTests.swift */; };
 		35AEB6A02224DF040078AA98 /* AdemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB69F2224DF040078AA98 /* AdemUITests.swift */; };
+		35AEB6AE2224E0DE0078AA98 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */; };
+		35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B02224E4080078AA98 /* SettingTVC.swift */; };
+		35AEB6B32224E4400078AA98 /* privacyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B22224E4400078AA98 /* privacyTVC.swift */; };
+		35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B52224E46A0078AA98 /* FirebaseFiles.swift */; };
+		35AEB6B92224E49B0078AA98 /* BLEHR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B82224E49B0078AA98 /* BLEHR.swift */; };
+		35AEB6BC2224E4BD0078AA98 /* DynamicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6BB2224E4BD0078AA98 /* DynamicAttributes.swift */; };
+		35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6BD2224E4D10078AA98 /* Product.swift */; };
+		35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C02224E4F90078AA98 /* DataService.swift */; };
+		35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C22224E5180078AA98 /* Cloud Storage.swift */; };
+		525E2383F959244B7D24EC39 /* Pods_Adem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC722A76BD90EF6B0C6132 /* Pods_Adem.framework */; };
+		C02A574A7FBF7C4E9816716D /* Pods_AdemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA7CAD43C355AC6322DB607 /* Pods_AdemUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,24 @@
 		35AEB69B2224DF040078AA98 /* AdemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB69F2224DF040078AA98 /* AdemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdemUITests.swift; sourceTree = "<group>"; };
 		35AEB6A12224DF040078AA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (3).plist"; path = "../../../../../Downloads/GoogleService-Info (3).plist"; sourceTree = "<group>"; };
+		35AEB6B02224E4080078AA98 /* SettingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
+		35AEB6B22224E4400078AA98 /* privacyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyTVC.swift; sourceTree = "<group>"; };
+		35AEB6B52224E46A0078AA98 /* FirebaseFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFiles.swift; sourceTree = "<group>"; };
+		35AEB6B82224E49B0078AA98 /* BLEHR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEHR.swift; sourceTree = "<group>"; };
+		35AEB6BB2224E4BD0078AA98 /* DynamicAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicAttributes.swift; sourceTree = "<group>"; };
+		35AEB6BD2224E4D10078AA98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		35AEB6C02224E4F90078AA98 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		35AEB6C22224E5180078AA98 /* Cloud Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud Storage.swift"; sourceTree = "<group>"; };
+		5335657E8CA334A2ED869F87 /* Pods-AdemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdemTests/Pods-AdemTests.release.xcconfig"; sourceTree = "<group>"; };
+		6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adem/Pods-Adem.debug.xcconfig"; sourceTree = "<group>"; };
+		7DA7CAD43C355AC6322DB607 /* Pods_AdemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC853A1B04CFD9FFB8D1F95 /* Pods-Adem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adem.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adem/Pods-Adem.release.xcconfig"; sourceTree = "<group>"; };
+		BB3364FCAFFCF9E774BA88B2 /* Pods-AdemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdemUITests/Pods-AdemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E59A6AC73E7D7200BC29923A /* Pods-AdemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdemUITests/Pods-AdemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8A428789E3C8DF13BCD0963 /* Pods-AdemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdemTests/Pods-AdemTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EC722A76BD90EF6B0C6132 /* Pods_Adem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525E2383F959244B7D24EC39 /* Pods_Adem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0412C1319208DA6F55BEAC /* Pods_AdemTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +100,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02A574A7FBF7C4E9816716D /* Pods_AdemUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0091ADE0C773FCC34DE3F181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC722A76BD90EF6B0C6132 /* Pods_Adem.framework */,
+				6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */,
+				7DA7CAD43C355AC6322DB607 /* Pods_AdemUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35AEB6702224DF010078AA98 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +124,8 @@
 				35AEB6932224DF040078AA98 /* AdemTests */,
 				35AEB69E2224DF040078AA98 /* AdemUITests */,
 				35AEB67A2224DF020078AA98 /* Products */,
+				93805D6959B5069C3AB01201 /* Pods */,
+				0091ADE0C773FCC34DE3F181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +142,18 @@
 		35AEB67B2224DF020078AA98 /* Adem */ = {
 			isa = PBXGroup;
 			children = (
+				35AEB6C42224E5300078AA98 /* Views */,
+				35AEB6BF2224E4E70078AA98 /* Services */,
+				35AEB6BA2224E4AC0078AA98 /* Model */,
+				35AEB6B72224E4880078AA98 /* Bluetooth */,
+				35AEB6B42224E4540078AA98 /* File Mapping */,
+				35AEB6AF2224E3D70078AA98 /* TableViewControllers */,
 				35AEB67C2224DF020078AA98 /* AppDelegate.swift */,
 				35AEB6802224DF020078AA98 /* Main.storyboard */,
 				35AEB6862224DF040078AA98 /* Assets.xcassets */,
 				35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */,
 				35AEB68B2224DF040078AA98 /* Info.plist */,
+				35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */,
 				35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */,
 			);
 			path = Adem;
@@ -125,6 +177,69 @@
 			path = AdemUITests;
 			sourceTree = "<group>";
 		};
+		35AEB6AF2224E3D70078AA98 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35AEB6B02224E4080078AA98 /* SettingTVC.swift */,
+				35AEB6B22224E4400078AA98 /* privacyTVC.swift */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		35AEB6B42224E4540078AA98 /* File Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				35AEB6B52224E46A0078AA98 /* FirebaseFiles.swift */,
+			);
+			path = "File Mapping";
+			sourceTree = "<group>";
+		};
+		35AEB6B72224E4880078AA98 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				35AEB6B82224E49B0078AA98 /* BLEHR.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		35AEB6BA2224E4AC0078AA98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35AEB6BB2224E4BD0078AA98 /* DynamicAttributes.swift */,
+				35AEB6BD2224E4D10078AA98 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35AEB6BF2224E4E70078AA98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				35AEB6C02224E4F90078AA98 /* DataService.swift */,
+				35AEB6C22224E5180078AA98 /* Cloud Storage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35AEB6C42224E5300078AA98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93805D6959B5069C3AB01201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */,
+				9CC853A1B04CFD9FFB8D1F95 /* Pods-Adem.release.xcconfig */,
+				F8A428789E3C8DF13BCD0963 /* Pods-AdemTests.debug.xcconfig */,
+				5335657E8CA334A2ED869F87 /* Pods-AdemTests.release.xcconfig */,
+				BB3364FCAFFCF9E774BA88B2 /* Pods-AdemUITests.debug.xcconfig */,
+				E59A6AC73E7D7200BC29923A /* Pods-AdemUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35AEB6A42224DF040078AA98 /* Build configuration list for PBXNativeTarget "Adem" */;
 			buildPhases = (
+				FF298845D067E2809C6F56B5 /* [CP] Check Pods Manifest.lock */,
 				35AEB6752224DF020078AA98 /* Sources */,
 				35AEB6762224DF020078AA98 /* Frameworks */,
 				35AEB6772224DF020078AA98 /* Resources */,
+				9C5C72C3192FEAE418A5AD12 /* [CP] Embed Pods Frameworks */,
+				C1D4ACF2B801698EEA8EB13A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35AEB6A72224DF040078AA98 /* Build configuration list for PBXNativeTarget "AdemTests" */;
 			buildPhases = (
+				C8BF23C1F79B75F3BBB627B5 /* [CP] Check Pods Manifest.lock */,
 				35AEB68C2224DF040078AA98 /* Sources */,
 				35AEB68D2224DF040078AA98 /* Frameworks */,
 				35AEB68E2224DF040078AA98 /* Resources */,
@@ -167,6 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35AEB6AA2224DF040078AA98 /* Build configuration list for PBXNativeTarget "AdemUITests" */;
 			buildPhases = (
+				428417EFD352487D601D1E1D /* [CP] Check Pods Manifest.lock */,
 				35AEB6972224DF040078AA98 /* Sources */,
 				35AEB6982224DF040078AA98 /* Frameworks */,
 				35AEB6992224DF040078AA98 /* Resources */,
@@ -230,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AEB68A2224DF040078AA98 /* LaunchScreen.storyboard in Resources */,
+				35AEB6AE2224E0DE0078AA98 /* GoogleService-Info (3).plist in Resources */,
 				35AEB6872224DF040078AA98 /* Assets.xcassets in Resources */,
 				35AEB6822224DF020078AA98 /* Main.storyboard in Resources */,
 			);
@@ -251,12 +372,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		428417EFD352487D601D1E1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdemUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5C72C3192FEAE418A5AD12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D4ACF2B801698EEA8EB13A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8BF23C1F79B75F3BBB627B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdemTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF298845D067E2809C6F56B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35AEB6752224DF020078AA98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */,
+				35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */,
+				35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */,
+				35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */,
 				35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */,
+				35AEB6B92224E49B0078AA98 /* BLEHR.swift in Sources */,
+				35AEB6BC2224E4BD0078AA98 /* DynamicAttributes.swift in Sources */,
+				35AEB6B32224E4400078AA98 /* privacyTVC.swift in Sources */,
+				35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */,
 				35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +672,7 @@
 		};
 		35AEB6A52224DF040078AA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +691,7 @@
 		};
 		35AEB6A62224DF040078AA98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC853A1B04CFD9FFB8D1F95 /* Pods-Adem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +710,7 @@
 		};
 		35AEB6A82224DF040078AA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A428789E3C8DF13BCD0963 /* Pods-AdemTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +732,7 @@
 		};
 		35AEB6A92224DF040078AA98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5335657E8CA334A2ED869F87 /* Pods-AdemTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +754,7 @@
 		};
 		35AEB6AB2224DF040078AA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3364FCAFFCF9E774BA88B2 /* Pods-AdemUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +775,7 @@
 		};
 		35AEB6AC2224DF040078AA98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59A6AC73E7D7200BC29923A /* Pods-AdemUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
