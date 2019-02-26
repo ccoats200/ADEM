@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67C2224DF020078AA98 /* AppDelegate.swift */; };
-		35AEB67F2224DF020078AA98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67E2224DF020078AA98 /* ViewController.swift */; };
 		35AEB6822224DF020078AA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6802224DF020078AA98 /* Main.storyboard */; };
 		35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */; };
 		35AEB6872224DF040078AA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6862224DF040078AA98 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		35AEB6792224DF020078AA98 /* Adem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB67C2224DF020078AA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35AEB67E2224DF020078AA98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35AEB6812224DF020078AA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35AEB6842224DF020078AA98 /* Adem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adem.xcdatamodel; sourceTree = "<group>"; };
 		35AEB6862224DF040078AA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				35AEB67C2224DF020078AA98 /* AppDelegate.swift */,
-				35AEB67E2224DF020078AA98 /* ViewController.swift */,
 				35AEB6802224DF020078AA98 /* Main.storyboard */,
 				35AEB6862224DF040078AA98 /* Assets.xcassets */,
 				35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */,
@@ -260,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */,
-				35AEB67F2224DF020078AA98 /* ViewController.swift in Sources */,
 				35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
