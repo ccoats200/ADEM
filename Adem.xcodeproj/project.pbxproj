@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0A0412C1319208DA6F55BEAC /* Pods_AdemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */; };
+		3574510A2224E718007CAAC5 /* Login Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451092224E718007CAAC5 /* Login Screen.swift */; };
+		3574510C2224E734007CAAC5 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574510B2224E734007CAAC5 /* profileVC.swift */; };
+		3574510E2224E750007CAAC5 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574510D2224E750007CAAC5 /* ListVC.swift */; };
+		357451102224E767007CAAC5 /* ItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574510F2224E767007CAAC5 /* ItemVC.swift */; };
+		357451122224E796007CAAC5 /* PantryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451112224E796007CAAC5 /* PantryVC.swift */; };
+		357451142224E7A6007CAAC5 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451132224E7A6007CAAC5 /* Meals.swift */; };
+		357451162224E7C8007CAAC5 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451152224E7C8007CAAC5 /* AccountVC.swift */; };
+		357451182224E7EE007CAAC5 /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451172224E7EE007CAAC5 /* tabController.swift */; };
+		3574511A2224E806007CAAC5 /* AccountVCOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451192224E806007CAAC5 /* AccountVCOld.swift */; };
+		3574511C2224E823007CAAC5 /* TestingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574511B2224E823007CAAC5 /* TestingAccount.swift */; };
+		3574511E2224E867007CAAC5 /* ProductInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574511D2224E867007CAAC5 /* ProductInfoVC.swift */; };
+		357451202224E883007CAAC5 /* productCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574511F2224E883007CAAC5 /* productCell.swift */; };
+		357451232224E8BF007CAAC5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451222224E8BF007CAAC5 /* Color.swift */; };
+		357451252224E8D7007CAAC5 /* Design.Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451242224E8D7007CAAC5 /* Design.Elements.swift */; };
+		357451272224E903007CAAC5 /* AppDelegateUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */; };
+		3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451292224E92B007CAAC5 /* SignUpInfo.swift */; };
 		35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67C2224DF020078AA98 /* AppDelegate.swift */; };
 		35AEB6822224DF020078AA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6802224DF020078AA98 /* Main.storyboard */; };
 		35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */; };
@@ -55,6 +71,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		357451092224E718007CAAC5 /* Login Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Screen.swift"; sourceTree = "<group>"; };
+		3574510B2224E734007CAAC5 /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
+		3574510D2224E750007CAAC5 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		3574510F2224E767007CAAC5 /* ItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVC.swift; sourceTree = "<group>"; };
+		357451112224E796007CAAC5 /* PantryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryVC.swift; sourceTree = "<group>"; };
+		357451132224E7A6007CAAC5 /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		357451152224E7C8007CAAC5 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		357451172224E7EE007CAAC5 /* tabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
+		357451192224E806007CAAC5 /* AccountVCOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVCOld.swift; sourceTree = "<group>"; };
+		3574511B2224E823007CAAC5 /* TestingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAccount.swift; sourceTree = "<group>"; };
+		3574511D2224E867007CAAC5 /* ProductInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoVC.swift; sourceTree = "<group>"; };
+		3574511F2224E883007CAAC5 /* productCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productCell.swift; sourceTree = "<group>"; };
+		357451222224E8BF007CAAC5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		357451242224E8D7007CAAC5 /* Design.Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.Elements.swift; sourceTree = "<group>"; };
+		357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateUserLogin.swift; sourceTree = "<group>"; };
+		357451292224E92B007CAAC5 /* SignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo.swift; sourceTree = "<group>"; };
 		35AEB6792224DF020078AA98 /* Adem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB67C2224DF020078AA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AEB6812224DF020078AA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +167,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		357451082224E705007CAAC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				357451092224E718007CAAC5 /* Login Screen.swift */,
+				3574510B2224E734007CAAC5 /* profileVC.swift */,
+				3574510D2224E750007CAAC5 /* ListVC.swift */,
+				3574510F2224E767007CAAC5 /* ItemVC.swift */,
+				357451112224E796007CAAC5 /* PantryVC.swift */,
+				357451132224E7A6007CAAC5 /* Meals.swift */,
+				357451152224E7C8007CAAC5 /* AccountVC.swift */,
+				357451172224E7EE007CAAC5 /* tabController.swift */,
+				357451192224E806007CAAC5 /* AccountVCOld.swift */,
+				3574511B2224E823007CAAC5 /* TestingAccount.swift */,
+				3574511D2224E867007CAAC5 /* ProductInfoVC.swift */,
+				3574511F2224E883007CAAC5 /* productCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		357451212224E89F007CAAC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				357451222224E8BF007CAAC5 /* Color.swift */,
+				357451242224E8D7007CAAC5 /* Design.Elements.swift */,
+				357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		357451282224E913007CAAC5 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				357451292224E92B007CAAC5 /* SignUpInfo.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		35AEB6702224DF010078AA98 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +229,9 @@
 		35AEB67B2224DF020078AA98 /* Adem */ = {
 			isa = PBXGroup;
 			children = (
+				357451282224E913007CAAC5 /* SignUp */,
+				357451212224E89F007CAAC5 /* Extensions */,
+				357451082224E705007CAAC5 /* Controllers */,
 				35AEB6C42224E5300078AA98 /* Views */,
 				35AEB6BF2224E4E70078AA98 /* Services */,
 				35AEB6BA2224E4AC0078AA98 /* Model */,
@@ -517,20 +589,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357451122224E796007CAAC5 /* PantryVC.swift in Sources */,
 				35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */,
 				35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */,
 				35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */,
 				35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */,
+				357451232224E8BF007CAAC5 /* Color.swift in Sources */,
 				35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */,
 				35AEB6B92224E49B0078AA98 /* BLEHR.swift in Sources */,
+				3574510A2224E718007CAAC5 /* Login Screen.swift in Sources */,
 				35C4C8AF2224E5F80025186E /* tabBar.swift in Sources */,
 				35AEB6BC2224E4BD0078AA98 /* DynamicAttributes.swift in Sources */,
 				35C4C8B52224E64B0025186E /* ItemLayout.swift in Sources */,
+				3574510C2224E734007CAAC5 /* profileVC.swift in Sources */,
+				357451182224E7EE007CAAC5 /* tabController.swift in Sources */,
 				35C4C8BB2224E6A90025186E /* pantryCellLayout.swift in Sources */,
+				3574510E2224E750007CAAC5 /* ListVC.swift in Sources */,
 				35AEB6B32224E4400078AA98 /* privacyTVC.swift in Sources */,
 				35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */,
+				357451102224E767007CAAC5 /* ItemVC.swift in Sources */,
+				3574511C2224E823007CAAC5 /* TestingAccount.swift in Sources */,
+				3574511A2224E806007CAAC5 /* AccountVCOld.swift in Sources */,
+				357451202224E883007CAAC5 /* productCell.swift in Sources */,
+				3574511E2224E867007CAAC5 /* ProductInfoVC.swift in Sources */,
+				357451272224E903007CAAC5 /* AppDelegateUserLogin.swift in Sources */,
 				35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */,
 				35C4C8B32224E62E0025186E /* AcctElements.swift in Sources */,
+				357451252224E8D7007CAAC5 /* Design.Elements.swift in Sources */,
+				357451142224E7A6007CAAC5 /* Meals.swift in Sources */,
+				3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */,
+				357451162224E7C8007CAAC5 /* AccountVC.swift in Sources */,
 				35C4C8B12224E6120025186E /* CellLayout.swift in Sources */,
 				35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */,
 				35C4C8B92224E6910025186E /* TableViewTest.swift in Sources */,
