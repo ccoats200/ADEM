@@ -24,6 +24,7 @@
 		357451252224E8D7007CAAC5 /* Design.Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451242224E8D7007CAAC5 /* Design.Elements.swift */; };
 		357451272224E903007CAAC5 /* AppDelegateUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */; };
 		3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451292224E92B007CAAC5 /* SignUpInfo.swift */; };
+		3582FD4822260F0C00CD24D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */; };
 		35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67C2224DF020078AA98 /* AppDelegate.swift */; };
 		35AEB6822224DF020078AA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6802224DF020078AA98 /* Main.storyboard */; };
 		35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */; };
@@ -39,7 +40,6 @@
 		35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6BD2224E4D10078AA98 /* Product.swift */; };
 		35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C02224E4F90078AA98 /* DataService.swift */; };
 		35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C22224E5180078AA98 /* Cloud Storage.swift */; };
-		35BA8F6522260CB6001F1780 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */; };
 		35C4C8AB2224E5B90025186E /* AcctCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */; };
 		35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AC2224E5E70025186E /* ProductCell.swift */; };
 		35C4C8AF2224E5F80025186E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AE2224E5F80025186E /* tabBar.swift */; };
@@ -87,6 +87,7 @@
 		357451242224E8D7007CAAC5 /* Design.Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.Elements.swift; sourceTree = "<group>"; };
 		357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateUserLogin.swift; sourceTree = "<group>"; };
 		357451292224E92B007CAAC5 /* SignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo.swift; sourceTree = "<group>"; };
+		3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35AEB6792224DF020078AA98 /* Adem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB67C2224DF020078AA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AEB6812224DF020078AA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		35AEB6BD2224E4D10078AA98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		35AEB6C02224E4F90078AA98 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		35AEB6C22224E5180078AA98 /* Cloud Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud Storage.swift"; sourceTree = "<group>"; };
-		35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcctCellDesign.swift; sourceTree = "<group>"; };
 		35C4C8AC2224E5E70025186E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		35C4C8AE2224E5F80025186E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
@@ -242,8 +242,8 @@
 				35AEB6802224DF020078AA98 /* Main.storyboard */,
 				35AEB6862224DF040078AA98 /* Assets.xcassets */,
 				35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */,
+				3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */,
 				35AEB68B2224DF040078AA98 /* Info.plist */,
-				35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */,
 				35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */,
 			);
 			path = Adem;
@@ -449,8 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AEB68A2224DF040078AA98 /* LaunchScreen.storyboard in Resources */,
-				35BA8F6522260CB6001F1780 /* GoogleService-Info.plist in Resources */,
 				35AEB6872224DF040078AA98 /* Assets.xcassets in Resources */,
+				3582FD4822260F0C00CD24D7 /* GoogleService-Info.plist in Resources */,
 				35AEB6822224DF020078AA98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
