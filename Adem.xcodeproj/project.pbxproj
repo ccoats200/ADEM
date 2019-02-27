@@ -31,7 +31,6 @@
 		35AEB68A2224DF040078AA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */; };
 		35AEB6952224DF040078AA98 /* AdemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6942224DF040078AA98 /* AdemTests.swift */; };
 		35AEB6A02224DF040078AA98 /* AdemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB69F2224DF040078AA98 /* AdemUITests.swift */; };
-		35AEB6AE2224E0DE0078AA98 /* GoogleService-Info (3).plist in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */; };
 		35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B02224E4080078AA98 /* SettingTVC.swift */; };
 		35AEB6B32224E4400078AA98 /* privacyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B22224E4400078AA98 /* privacyTVC.swift */; };
 		35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6B52224E46A0078AA98 /* FirebaseFiles.swift */; };
@@ -40,6 +39,7 @@
 		35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6BD2224E4D10078AA98 /* Product.swift */; };
 		35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C02224E4F90078AA98 /* DataService.swift */; };
 		35AEB6C32224E5180078AA98 /* Cloud Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6C22224E5180078AA98 /* Cloud Storage.swift */; };
+		35BA8F6522260CB6001F1780 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */; };
 		35C4C8AB2224E5B90025186E /* AcctCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */; };
 		35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AC2224E5E70025186E /* ProductCell.swift */; };
 		35C4C8AF2224E5F80025186E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8AE2224E5F80025186E /* tabBar.swift */; };
@@ -100,7 +100,6 @@
 		35AEB69B2224DF040078AA98 /* AdemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB69F2224DF040078AA98 /* AdemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdemUITests.swift; sourceTree = "<group>"; };
 		35AEB6A12224DF040078AA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (3).plist"; path = "../../../../../Downloads/GoogleService-Info (3).plist"; sourceTree = "<group>"; };
 		35AEB6B02224E4080078AA98 /* SettingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
 		35AEB6B22224E4400078AA98 /* privacyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privacyTVC.swift; sourceTree = "<group>"; };
 		35AEB6B52224E46A0078AA98 /* FirebaseFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFiles.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		35AEB6BD2224E4D10078AA98 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		35AEB6C02224E4F90078AA98 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		35AEB6C22224E5180078AA98 /* Cloud Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cloud Storage.swift"; sourceTree = "<group>"; };
+		35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35C4C8AA2224E5B90025186E /* AcctCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcctCellDesign.swift; sourceTree = "<group>"; };
 		35C4C8AC2224E5E70025186E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		35C4C8AE2224E5F80025186E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				35AEB6862224DF040078AA98 /* Assets.xcassets */,
 				35AEB6882224DF040078AA98 /* LaunchScreen.storyboard */,
 				35AEB68B2224DF040078AA98 /* Info.plist */,
-				35AEB6AD2224E0DE0078AA98 /* GoogleService-Info (3).plist */,
+				35BA8F6422260CB5001F1780 /* GoogleService-Info.plist */,
 				35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */,
 			);
 			path = Adem;
@@ -449,7 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AEB68A2224DF040078AA98 /* LaunchScreen.storyboard in Resources */,
-				35AEB6AE2224E0DE0078AA98 /* GoogleService-Info (3).plist in Resources */,
+				35BA8F6522260CB6001F1780 /* GoogleService-Info.plist in Resources */,
 				35AEB6872224DF040078AA98 /* Assets.xcassets in Resources */,
 				35AEB6822224DF020078AA98 /* Main.storyboard in Resources */,
 			);
@@ -497,7 +497,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -510,7 +510,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -533,12 +533,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Adem/Pods-Adem-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

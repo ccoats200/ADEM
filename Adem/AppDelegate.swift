@@ -13,7 +13,8 @@ import FirebaseFirestore
 
 
 //MARK: Important
-/*Remember to ignore Firebase and private info. see https://help.github.com/articles/ignoring-files/
+/*
+Remember to ignore Firebase and private info. see https://help.github.com/articles/ignoring-files/
 */
 
 
@@ -40,9 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		//Firestore
 		FirebaseApp.configure()
 		let db = Firestore.firestore()
-		let settings = db.settings
-		settings.areTimestampsInSnapshotsEnabled = true
-		db.settings = settings
+		//let settings = db.settings
+		//settings.areTimestampsInSnapshotsEnabled = true
+		//db.settings = settings
 		
 		
 		//tabBar RootController
