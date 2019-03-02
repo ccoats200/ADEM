@@ -14,12 +14,14 @@ class ItemLayout: CellBasics {
 	
 	let Item: UIImageView = {
 		let ItemVCLayout = UIImageView()
-		ItemVCLayout.image = UIImage(named: "eggs")
+		ItemVCLayout.image = UIImage(named: "blueBerry")
 		ItemVCLayout.contentMode = .center
-		//ItemVCLayout.contentMode = .scaleAspectFit
+		ItemVCLayout.contentMode = .scaleAspectFit
 		ItemVCLayout.clipsToBounds = true
 		ItemVCLayout.layer.masksToBounds = true
 		ItemVCLayout.layer.cornerRadius = 5
+		ItemVCLayout.layer.borderWidth = 2
+		ItemVCLayout.layer.borderColor = UIColor.white.cgColor
 		print("Created Image for the product image in the details VC")
 		
 		return ItemVCLayout
@@ -88,14 +90,14 @@ class ItemLayout: CellBasics {
 		setUpAddButton()
 		
 		//Horizontral Constaints
-		addConstraintsWithFormats(format: "H:|-2-[v0]-2-|", views: Item)
-		addConstraintsWithFormats(format: "H:|-8-[v0]-8-|", views: ItemName)
+		addConstraintsWithFormats(format: "H:|-25-[v0]-25-|", views: Item)
+		addConstraintsWithFormats(format: "H:|-25-[v0]-25-|", views: ItemName)
 		addConstraintsWithFormats(format: "H:|-15-[v0]-15-|", views: infoView)
 		
 		//addConstraintsWithFormats(format: "H:|-3-[v0]-3-[v1(50)]-8-[v2(40)]", views: productName, price, quantityTicker)
 		
 		//Vertical Constraints (productImageView = 105)
-		addConstraintsWithFormats(format: "V:|-2-[v0(100)]-1-[v1(20)]-3-|", views: Item, ItemName)
+		addConstraintsWithFormats(format: "V:|-2-[v0(150)]-1-[v1(20)]-3-|", views: Item, ItemName)
 		
 		//addConstraintsWithFormats(format: "V:|-2-[v0(100)]-1-[v1(20)]-3-[v2(1)]-2-[v3(200)]-|", views: Item, ItemName, sView, infoView)
 		//addConstraintsWithFormats(format: "V:|-3-[v0(105)]-4-[v1(20)]-8-[v2(1)]|", views: productImageView, productName, seperatorView)

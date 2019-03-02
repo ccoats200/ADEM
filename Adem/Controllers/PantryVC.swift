@@ -48,7 +48,6 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 		
 		//fetchItems()
 		
-		
 		navigationItem.title = "Pantry"
 		
 		//Left aligned title
@@ -178,7 +177,9 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 	//product Button
 	@objc func handleProduct() {
 		
-		let cController = ProductVC(collectionViewLayout: UICollectionViewFlowLayout())
+		
+		let cController = productVCLayout()
+		//let cController = ProductVC(collectionViewLayout: UICollectionViewFlowLayout())
 		cController.hidesBottomBarWhenPushed = true
 		self.navigationController?.pushViewController(cController, animated: true)
 		

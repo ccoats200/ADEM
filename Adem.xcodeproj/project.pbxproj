@@ -25,6 +25,7 @@
 		357451272224E903007CAAC5 /* AppDelegateUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */; };
 		3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451292224E92B007CAAC5 /* SignUpInfo.swift */; };
 		3582FD4822260F0C00CD24D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */; };
+		3582FD4A2226188100CD24D7 /* ItemVCLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3582FD492226188100CD24D7 /* ItemVCLayout.swift */; };
 		35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB67C2224DF020078AA98 /* AppDelegate.swift */; };
 		35AEB6822224DF020078AA98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AEB6802224DF020078AA98 /* Main.storyboard */; };
 		35AEB6852224DF020078AA98 /* Adem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35AEB6832224DF020078AA98 /* Adem.xcdatamodeld */; };
@@ -88,6 +89,7 @@
 		357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateUserLogin.swift; sourceTree = "<group>"; };
 		357451292224E92B007CAAC5 /* SignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo.swift; sourceTree = "<group>"; };
 		3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3582FD492226188100CD24D7 /* ItemVCLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVCLayout.swift; sourceTree = "<group>"; };
 		35AEB6792224DF020078AA98 /* Adem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AEB67C2224DF020078AA98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35AEB6812224DF020078AA98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				35C4C8B62224E6620025186E /* settingsLayout.swift */,
 				35C4C8B82224E6910025186E /* TableViewTest.swift */,
 				35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */,
+				3582FD492226188100CD24D7 /* ItemVCLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				357451122224E796007CAAC5 /* PantryVC.swift in Sources */,
 				35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */,
 				35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */,
+				3582FD4A2226188100CD24D7 /* ItemVCLayout.swift in Sources */,
 				35AEB6BE2224E4D20078AA98 /* Product.swift in Sources */,
 				35AEB6B12224E4080078AA98 /* SettingTVC.swift in Sources */,
 				357451232224E8BF007CAAC5 /* Color.swift in Sources */,

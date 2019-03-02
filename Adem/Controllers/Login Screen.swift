@@ -38,12 +38,11 @@ class login: UIViewController, UITextFieldDelegate {
 		gradient.endPoint = CGPoint(x: 1, y: 1)
 		view.layer.addSublayer(gradient)
 		
-		
-		view.addSubview(facebookLoginImage)
-		view.addSubview(loginFieldView)
 		view.addSubview(ademImageHolder)
+		view.addSubview(loginFieldView)
 		view.addSubview(loginButton)
 		view.addSubview(signUpButton)
+		view.addSubview(facebookLoginImage)
 		
 		//setupademImageHolder()
 		setuploginFieldView()
@@ -59,6 +58,8 @@ class login: UIViewController, UITextFieldDelegate {
 		logintextfield.backgroundColor = UIColor.white
 		logintextfield.translatesAutoresizingMaskIntoConstraints = false
 		logintextfield.layer.cornerRadius = 5
+		logintextfield.layer.borderWidth = 1
+		logintextfield.layer.borderColor = UIColor.gray.cgColor
 		logintextfield.layer.masksToBounds = true
 		return logintextfield
 	}()
@@ -261,6 +262,8 @@ class login: UIViewController, UITextFieldDelegate {
 	
 	func setuploginFieldView() {
 		
+		
+		
 		ademImageHolder.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		ademImageHolder.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
 		ademImageHolder.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -24).isActive = true
@@ -278,6 +281,8 @@ class login: UIViewController, UITextFieldDelegate {
 		loginFieldView.addSubview(emailTextSeparator)
 		loginFieldView.addSubview(passwordTextField)
 		
+		let passwordImage = UIImage(named:"Check")
+		addRightImageTo(textField: emailTextField, addImage: passwordImage!)
 		
 		//Email text
 		emailTextField.leftAnchor.constraint(equalTo: loginFieldView.leftAnchor, constant: 12).isActive = true
@@ -286,9 +291,10 @@ class login: UIViewController, UITextFieldDelegate {
 		emailTextField.heightAnchor.constraint(equalTo: loginFieldView.heightAnchor, multiplier: 1/2).isActive = true
 		
 		//Name separator
-		emailTextSeparator.leftAnchor.constraint(equalTo: loginFieldView.leftAnchor).isActive = true
+		//emailTextSeparator.leftAnchor.constraint(equalTo: loginFieldView.leftAnchor, constant: -20).isActive = true
 		emailTextSeparator.topAnchor.constraint(equalTo: emailTextField.bottomAnchor).isActive = true
-		emailTextSeparator.widthAnchor.constraint(equalTo: loginFieldView.widthAnchor).isActive = true
+		emailTextSeparator.centerXAnchor.constraint(equalTo: emailTextField.centerXAnchor).isActive = true
+		emailTextSeparator.widthAnchor.constraint(equalTo: loginFieldView.widthAnchor,  constant: -25).isActive = true
 		emailTextSeparator.heightAnchor.constraint(equalToConstant: 1).isActive = true
 		
 		//Password text
@@ -299,6 +305,13 @@ class login: UIViewController, UITextFieldDelegate {
 		
 	}
 	
+	func addRightImageTo(textField: UITextField, addImage img: UIImage) {
+		let rightImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: img.size.width, height: img.size.height))
+		rightImageView.image = img
+		textField.rightView = rightImageView
+		textField.rightViewMode = .always
+		
+	}
 	
 	func setuploginRegisterButton() {
 		loginButton.centerXAnchor.constraint(equalTo: loginFieldView.centerXAnchor).isActive = true

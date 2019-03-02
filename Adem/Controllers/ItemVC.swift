@@ -12,21 +12,6 @@ import CoreBluetooth
 
 
 
-//class productViewC: NSObject {
-//	func showProduct() {
-//		print("Showing Product VC")
-//
-//		if let keyWindow = UIApplication.shared.keyWindow {
-//			let view = UIView(frame: keyWindow.frame)
-//			view.backgroundColor = UIColor.red
-//
-//
-//			keyWindow.addSubview(view)
-//
-//		}
-//	}
-//}
-
 class ProductVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
 	
@@ -52,6 +37,8 @@ class ProductVC: UICollectionViewController, UICollectionViewDelegateFlowLayout 
 		
 		collectionView?.backgroundColor = UIColor.rgb(red: 30, green: 188, blue: 28)
 		
+		collectionView.isScrollEnabled = true
+		
 		collectionView?.register(ItemLayout.self, forCellWithReuseIdentifier: productForVC)
 		
 		//This moves the Cells to the correct offsets, Stylistic choice
@@ -67,7 +54,7 @@ class ProductVC: UICollectionViewController, UICollectionViewDelegateFlowLayout 
 	
 	func setUpNavBarButto(){
 		
-		let statusImage = UIBarButtonItem(image: UIImage(named: "Bookmark-Sharp")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(home))
+		let statusImage = UIBarButtonItem(image: UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(home))
 		
 		
 		navigationItem.rightBarButtonItem = statusImage
