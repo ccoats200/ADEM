@@ -24,27 +24,28 @@ class productVCLayout: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		let titleText = UILabel()
-		titleText.text = "Blueberies"
-		titleText.font = UIFont(name: "Lato", size: 20)
-		//titleText.textColor = UIColor.rgb(red: 30, green: 188, blue: 29)
-		titleText.textColor = UIColor.white
-		navigationItem.titleView = titleText
-		navigationController?.navigationBar.isTranslucent = true
-		//navigationController?.navigationBar.alpha = 2.0
+
 		
 		scrolling.isScrollEnabled = true
 		
 		view.backgroundColor = UIColor.rgb(red: 30, green: 188, blue: 29)
-		
-		
-		
+	
 		view.addSubview(scrolling)
 
-//		setuploginFieldView()
-//		setupproductInfoHolder()
-//		setupproductNutritionLabel()
 		setUpScrollView()
+		
+		
+		let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction(_:)))
+		self.view.addGestureRecognizer(panGestureRecognizer)
+		
+		self.dismiss(animated: true, completion: nil)
+	}
+	
+	
+	@objc func panGestureRecognizerAction(_ gesture: UIPanGestureRecognizer) {
+		
+		print(gesture)
+		
 	}
 	
 	let scrolling: UIScrollView = {
@@ -59,8 +60,7 @@ class productVCLayout: UIViewController {
 	
 	let backgrounLightColor: UIView = {
 		let lightColor = UIView()
-		lightColor.backgroundColor = UIColor.rgb(red: 54, green: 195, blue: 52)
-		//logintextfield.layer.opacity = 2.0
+		lightColor.backgroundColor = UIColor.white.withAlphaComponent(0.10)
 		lightColor.translatesAutoresizingMaskIntoConstraints = false
 		lightColor.layer.masksToBounds = true
 		
@@ -83,17 +83,35 @@ class productVCLayout: UIViewController {
 		return productImageDesign
 	}()
 	
-	let productNutritionInfo: UIImageView = {
-		let nutritionLabels = UIImageView()
-		nutritionLabels.image = UIImage(named: "Check")
-		nutritionLabels.translatesAutoresizingMaskIntoConstraints = false
-		nutritionLabels.contentMode = .scaleAspectFit
-		nutritionLabels.backgroundColor = UIColor.blue
-		nutritionLabels.layer.cornerRadius = 12.5
-		
-		return nutritionLabels
+	let alwaysNotify: UIImageView = {
+		let noitfy = UIImageView()
+		noitfy.image = UIImage(named: "Check")
+		noitfy.translatesAutoresizingMaskIntoConstraints = false
+		noitfy.contentMode = .scaleAspectFit
+		noitfy.backgroundColor = UIColor.blue
+		noitfy.layer.cornerRadius = 12.5
+		return noitfy
 	}()
 	
+	
+	lazy var healthfFacts: UIButton = {
+		let facts = UIButton()
+		let image = UIImage(named: "Vegan")
+		//facts.backgroundImage(for: .normal)
+		facts.setImage(image, for: .normal)
+		facts.translatesAutoresizingMaskIntoConstraints = false
+		facts.contentMode = .scaleAspectFit
+		facts.addTarget(self, action: #selector(handleFacts), for: .touchUpInside)
+		return facts
+	}()
+	
+	//product Button
+	@objc func handleFacts() {
+		
+		let signUpInfo = login()
+		self.present(signUpInfo, animated: true)
+		print("went to new page")
+	}
 	
 	let productInfoHolder: UIView = {
 		let productInfo = UIView()
@@ -141,37 +159,69 @@ class productVCLayout: UIViewController {
 		return NutLbl
 	}()
 	
+	
+	
+	
+	lazy var backButton: UIButton = {
+		let back = UIButton(type: .system)
+		back.setTitle("Berries", for: .normal)
+		back.translatesAutoresizingMaskIntoConstraints = false
+		back.setTitleColor(UIColor.white, for: .normal)
+		back.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+		back.addTarget(self, action: #selector(handleBack), for: .touchUpInside)
+		back.backgroundColor = UIColor.white.withAlphaComponent(0.10)
+		return back
+		
+	}()
+	
+	//product Button
+	@objc func handleBack() {
+
+		self.dismiss(animated: true, completion: nil)
+
+		print("went back")
+	}
+	
+	
 	func setUpScrollView() {
 		scrolling.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+		scrolling.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		scrolling.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
 		scrolling.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 		
+		
+		scrolling.addSubview(backButton)
 		scrolling.addSubview(backgrounLightColor)
 		scrolling.addSubview(productInfoHolder)
 		scrolling.addSubview(NurtritionLabel)
 		scrolling.addSubview(productImage)
 		//Adding subviews
-		scrolling.addSubview(productNutritionInfo)
+		scrolling.addSubview(alwaysNotify)
+		scrolling.addSubview(healthfFacts)
+
 		scrolling.addSubview(calLabel)
 		scrolling.addSubview(priceLabel)
 		
 		setuploginFieldView()
 		setupproductInfoHolder()
 		setupproductNutritionLabel()
+		
 	}
 	
 	
 	func setuploginFieldView() {
 		
+		backButton.topAnchor.constraint(equalTo: scrolling.topAnchor, constant: 5).isActive = true
+		backButton.centerXAnchor.constraint(equalTo: scrolling.centerXAnchor).isActive = true
+		backButton.widthAnchor.constraint(equalTo: scrolling.widthAnchor, constant: -50).isActive = true
+		backButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+		backButton.layer.cornerRadius = 20
 		
-		backgrounLightColor.topAnchor.constraint(equalTo: scrolling.topAnchor, constant: 5).isActive = true
-		backgrounLightColor.centerXAnchor.constraint(equalTo: scrolling.centerXAnchor).isActive = true
-		backgrounLightColor.widthAnchor.constraint(equalTo: scrolling.widthAnchor, constant: -50).isActive = true
+		backgrounLightColor.topAnchor.constraint(equalTo: backButton.bottomAnchor, constant: 10).isActive = true
+		backgrounLightColor.centerXAnchor.constraint(equalTo: backButton.centerXAnchor).isActive = true
+		backgrounLightColor.widthAnchor.constraint(equalTo: backButton.widthAnchor, constant: -50).isActive = true
 		backgrounLightColor.heightAnchor.constraint(equalToConstant: 300).isActive = true
-		backgrounLightColor.layer.cornerRadius = 150 //(view.frame.width + -50)/2
-		
-		//Image added
-		
+		backgrounLightColor.layer.cornerRadius = 140 //(view.frame.width + -50)/2
 		
 		
 		//login Fields
@@ -197,21 +247,27 @@ class productVCLayout: UIViewController {
 		productInfoHolder.layer.cornerRadius = 10
 		
 		
+		//nutrition labels
+		healthfFacts.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
+		healthfFacts.leftAnchor.constraint(equalTo: productInfoHolder.leftAnchor, constant: 10).isActive = true
+		healthfFacts.widthAnchor.constraint(equalToConstant: 25).isActive = true
+		healthfFacts.heightAnchor.constraint(equalToConstant: 25).isActive = true
+		
 		
 		//nutrition labels
-		productNutritionInfo.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
-		productNutritionInfo.rightAnchor.constraint(equalTo: productInfoHolder.rightAnchor, constant: -10).isActive = true
-		productNutritionInfo.widthAnchor.constraint(equalToConstant: 25).isActive = true
-		productNutritionInfo.heightAnchor.constraint(equalToConstant: 25).isActive = true
+		alwaysNotify.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
+		alwaysNotify.rightAnchor.constraint(equalTo: productInfoHolder.rightAnchor, constant: -10).isActive = true
+		alwaysNotify.widthAnchor.constraint(equalToConstant: 25).isActive = true
+		alwaysNotify.heightAnchor.constraint(equalToConstant: 25).isActive = true
 		
 		//calories
-		calLabel.topAnchor.constraint(equalTo: productNutritionInfo.bottomAnchor, constant: 5).isActive = true
+		calLabel.topAnchor.constraint(equalTo: alwaysNotify.bottomAnchor, constant: 5).isActive = true
 		calLabel.leftAnchor.constraint(equalTo: productInfoHolder.leftAnchor, constant: 12).isActive = true
 		calLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
 		calLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
 		
 		//calories
-		priceLabel.topAnchor.constraint(equalTo: productNutritionInfo.bottomAnchor, constant: 5).isActive = true
+		priceLabel.topAnchor.constraint(equalTo: alwaysNotify.bottomAnchor, constant: 5).isActive = true
 		priceLabel.rightAnchor.constraint(equalTo: productInfoHolder.rightAnchor, constant: 12).isActive = true
 		priceLabel.widthAnchor.constraint(equalToConstant: 75).isActive = true
 		priceLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true

@@ -50,6 +50,8 @@
 		35C4C8B72224E6620025186E /* settingsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B62224E6620025186E /* settingsLayout.swift */; };
 		35C4C8B92224E6910025186E /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8B82224E6910025186E /* TableViewTest.swift */; };
 		35C4C8BB2224E6A90025186E /* pantryCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */; };
+		35DA18CF222B4DAC00A14340 /* Circle Trasition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA18CE222B4DAC00A14340 /* Circle Trasition.swift */; };
+		35DA18D3222B50F700A14340 /* CircleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA18D2222B50F700A14340 /* CircleTransition.swift */; };
 		525E2383F959244B7D24EC39 /* Pods_Adem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC722A76BD90EF6B0C6132 /* Pods_Adem.framework */; };
 		C02A574A7FBF7C4E9816716D /* Pods_AdemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA7CAD43C355AC6322DB607 /* Pods_AdemUITests.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +122,8 @@
 		35C4C8B62224E6620025186E /* settingsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsLayout.swift; sourceTree = "<group>"; };
 		35C4C8B82224E6910025186E /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
 		35C4C8BA2224E6A90025186E /* pantryCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryCellLayout.swift; sourceTree = "<group>"; };
+		35DA18CE222B4DAC00A14340 /* Circle Trasition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circle Trasition.swift"; sourceTree = "<group>"; };
+		35DA18D2222B50F700A14340 /* CircleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTransition.swift; sourceTree = "<group>"; };
 		5335657E8CA334A2ED869F87 /* Pods-AdemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdemTests/Pods-AdemTests.release.xcconfig"; sourceTree = "<group>"; };
 		6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adem/Pods-Adem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		35AEB67B2224DF020078AA98 /* Adem */ = {
 			isa = PBXGroup;
 			children = (
+				35DA18CD222B4D9600A14340 /* Transition */,
 				357451282224E913007CAAC5 /* SignUp */,
 				357451212224E89F007CAAC5 /* Extensions */,
 				357451082224E705007CAAC5 /* Controllers */,
@@ -327,6 +332,15 @@
 				3582FD492226188100CD24D7 /* ItemVCLayout.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		35DA18CD222B4D9600A14340 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				35DA18CE222B4DAC00A14340 /* Circle Trasition.swift */,
+				35DA18D2222B50F700A14340 /* CircleTransition.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 		93805D6959B5069C3AB01201 /* Pods */ = {
@@ -616,12 +630,14 @@
 				3574511E2224E867007CAAC5 /* ProductInfoVC.swift in Sources */,
 				357451272224E903007CAAC5 /* AppDelegateUserLogin.swift in Sources */,
 				35C4C8AD2224E5E70025186E /* ProductCell.swift in Sources */,
+				35DA18D3222B50F700A14340 /* CircleTransition.swift in Sources */,
 				35C4C8B32224E62E0025186E /* AcctElements.swift in Sources */,
 				357451252224E8D7007CAAC5 /* Design.Elements.swift in Sources */,
 				357451142224E7A6007CAAC5 /* Meals.swift in Sources */,
 				3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */,
 				357451162224E7C8007CAAC5 /* AccountVC.swift in Sources */,
 				35C4C8B12224E6120025186E /* CellLayout.swift in Sources */,
+				35DA18CF222B4DAC00A14340 /* Circle Trasition.swift in Sources */,
 				35AEB67D2224DF020078AA98 /* AppDelegate.swift in Sources */,
 				35C4C8B92224E6910025186E /* TableViewTest.swift in Sources */,
 				35C4C8AB2224E5B90025186E /* AcctCellDesign.swift in Sources */,

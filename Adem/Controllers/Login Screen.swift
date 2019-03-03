@@ -50,9 +50,6 @@ class login: UIViewController, UITextFieldDelegate {
 		
 	}
 	
-	
-	
-	
 	let loginFieldView: UIView = {
 		let logintextfield = UIView()
 		logintextfield.backgroundColor = UIColor.white
@@ -261,8 +258,6 @@ class login: UIViewController, UITextFieldDelegate {
 	}()
 	
 	func setuploginFieldView() {
-		
-		
 		
 		ademImageHolder.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		ademImageHolder.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true

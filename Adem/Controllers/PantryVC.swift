@@ -14,7 +14,19 @@ import FirebaseFirestore
 import AVFoundation
 
 
-class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate, CircleTransitionable {
+	
+	
+	//This is for the transition testing
+	var triggerButton = UIButton()
+	
+	var contentTextView = UITextView()
+	
+	var mainView: UIView {
+		return collectionView
+	}
+//Transition testing end
+	
 	
 	var products: [itemCellContent]? = {
 		var add = itemCellContent()
@@ -168,7 +180,6 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 		
 		//This is for the multiple collection views, horizontal and vertical
 		let aController = AccountVC()
-		
 		self.navigationController?.pushViewController(aController, animated: true)
 		//self.present(aController, animated: true, completion: nil)
 		print("Acccount tab is active")
@@ -177,12 +188,19 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 	//product Button
 	@objc func handleProduct() {
 		
+		//transition testing
+		//let transitionCoordinator = TransitionCoordinator()
 		
 		let cController = productVCLayout()
-		//let cController = ProductVC(collectionViewLayout: UICollectionViewFlowLayout())
 		cController.hidesBottomBarWhenPushed = true
-		self.navigationController?.pushViewController(cController, animated: true)
 		
+		//transition testing
+		//cController.transitioningDelegate = transitionCoordinator as? UIViewControllerTransitioningDelegate
+		
+		
+		//self.navigationController?.pushViewController(cController, animated: true)
+		self.present(cController, animated: true, completion: nil)
+		//self.dismiss(animated: true, completion: nil)
 		
 		print("Settings Tab is active")
 	}
