@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import CoreBluetooth
 
-
+/*
 
 class profileVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	
@@ -301,4 +301,5 @@ return defaults
 
 
 
+*/
 */

@@ -24,7 +24,6 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 	
 	var products: [itemCellContent]? = {
 		var add = itemCellContent()
-		//add.itemImageName = "addButton"
 		
 		
 		var eggs = itemCellContent()
@@ -39,7 +38,7 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 		
 		var test = itemCellContent()
 		test.itemName = "Strawberries"
-		test.itemImageName = "eggs"
+		test.itemImageName = "blueBerry"
 		test.Quantity = "10"
 		
 		
@@ -70,10 +69,7 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 		
 		collectionView?.backgroundColor = UIColor.rgb(red: 241, green: 249, blue: 255)
 		
-		//blue
-		//collectionView?.backgroundColor = UIColor.rgb(red: 38, green: 96, blue: 164)
-		//green
-		//collectionView?.backgroundColor = UIColor.rgb(red: 30, green: 188, blue: 28)
+		
 		
 		collectionView?.register(productCellLayout.self, forCellWithReuseIdentifier: cellID)
 		
@@ -99,9 +95,19 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 		let layouts = collectionViewLayout as! UICollectionViewFlowLayout
 		layouts.itemSize = CGSize(width: cellWidth, height: cellHeight)
 		
+		
+		
+		//Swipe Down
+		let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction(_:)))
+		self.view.addGestureRecognizer(panGestureRecognizer)
+		
 	}
 	
-	
+	@objc func panGestureRecognizerAction(_ gesture: UIPanGestureRecognizer) {
+		
+		print(gesture)
+		
+	}
 	
 	//SearchBar
 	lazy var searchBar: UISearchBar = {
@@ -209,11 +215,19 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 	//product Button
 	@objc func handleProduct() {
 		
-		let productsScreen = ProductVC(collectionViewLayout: UICollectionViewFlowLayout())
-		productsScreen.hidesBottomBarWhenPushed = true
-		//self.navigationController?.present(productsScreen, animated: true, completion: nil)
-		self.navigationController?.pushViewController(productsScreen, animated: true)
+		//transition testing
+		//let transitionCoordinator = TransitionCoordinator()
 		
+		let cController = productVCLayout()
+		cController.hidesBottomBarWhenPushed = true
+		
+		//transition testing
+		//cController.transitioningDelegate = transitionCoordinator as? UIViewControllerTransitioningDelegate
+		
+		
+		//self.navigationController?.pushViewController(cController, animated: true)
+		self.present(cController, animated: true, completion: nil)
+		//self.dismiss(animated: true, completion: nil)
 		
 		print("Settings Tab is active")
 	}
@@ -247,6 +261,16 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 	//Number of cells. update later for collection of cells based on product type
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		
+		//incremental increase
+		/*
+		for groceryProducts in cloudStorage {
+			if groceryProducts //increases
+			{
+				products.append to list
+			}
+		}
+		*/
+		
 		return products!.count
 	}
 	
@@ -273,44 +297,45 @@ class CustomCollecCellDesign: UICollectionViewController, UICollectionViewDelega
 	}
 	
 	
-	//Lets Build that app ep.16
-	//	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-	//		let Prod = productViewC()
-	//		Prod.showProduct()
-	//	}
+
 	
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		//_ = addProductCell.self
 		
-		//_ = 0
-		handleProduct()
+		if indexPath.item == 1 {
+			handleProduct()
+		} else {
+			handleAlert()
+		}
+		
 		print("123")
 	}
 	
-	
 	/*
-	//Size of Cell
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-	let Columns: CGFloat = 3.0
-	//let height = ((view.frame.width/3.2) - 2 - 2) * 9 / 16
-	//height + 2 + 129
-	print("Sets the hight of the cell")
+	var alertInfo: [thrownOut]? = {
+		var add = thrownOut()
+		
+		
+		return [add]
+		
+	}()
+
+*/
 	
+	//Search Button
+	@objc func handleAlert() {
+		
 	
-	
-	
-	
-	//let cellWidth = collectionView.bounds.width/3.6
-	//let cellHeight: CGFloat = 125
-	
-	
-	//let widths = self.view.frame.width
-	//view.frame.width / 3.6
-	
-	//let sizeofCell = CGSize(width: cellWidth, height: cellHeight) //25 points go to the product info (150)
-	return sizeofCell
+		//var products: [itemCellContent]?
+		
+		let alert = addedItemAlert()
+		//alert.alertAssets?.alertProductName = itemCellContent().itemName
+		//alert.alertAssets?.alertProductImageName = itemCellContent().itemImageName
+		alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+		
+		self.present(alert, animated: true, completion: nil)
+		
 	}
-	*/
+	
 	
 	//Space between rows
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

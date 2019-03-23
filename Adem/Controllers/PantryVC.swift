@@ -39,8 +39,8 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 		eggs.Quantity = "1"
 		
 		var Toast = itemCellContent()
-		Toast.itemName = "Bread"
-		Toast.itemImageName = "bread"
+		Toast.itemName = "Blueberry"
+		Toast.itemImageName = "blueBerry"
 		Toast.Quantity = "5"
 		
 		var test = itemCellContent()
@@ -66,9 +66,8 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 		//let titleTest = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
 		
 		let titleText = UILabel()
-		//titleText.text = "Pantry"
+		
 		titleText.font = UIFont(name: "Lato", size: 20)
-		//titleText.textColor = UIColor.rgb(red: 30, green: 188, blue: 29)
 		titleText.textColor = UIColor.rgb(red: 241, green: 249, blue: 255)
 		navigationItem.titleView = titleText
 		navigationController?.navigationBar.isTranslucent = false
@@ -77,8 +76,8 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 		
 		collectionView.isScrollEnabled = true
 		
-		collectionView?.backgroundColor = UIColor.rgb(red: 241, green: 249, blue: 255)
-		
+		//collectionView?.backgroundColor = UIColor.rgb(red: 241, green: 249, blue: 255)
+		collectionView?.backgroundColor = UIColor.white
 		//blue
 		//collectionView?.backgroundColor = UIColor.rgb(red: 38, green: 96, blue: 164)
 		//green
@@ -251,6 +250,8 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 	}
 	
 	
+	
+	
 	//Lets Build that app ep.16
 	//	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 	//		let Prod = productViewC()
@@ -259,34 +260,25 @@ class PantryVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, 
 	
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		
-		handleProduct()
+		if indexPath.item == 1 {
+			handleProduct()
+		} else {
+			handleAlert()
+		}
+		
 		print("123")
 	}
 	
-	
-	/*
-	//Size of Cell
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-	let Columns: CGFloat = 3.0
-	//let height = ((view.frame.width/3.2) - 2 - 2) * 9 / 16
-	//height + 2 + 129
-	print("Sets the hight of the cell")
-	
-	
-	
-	
-	
-	//let cellWidth = collectionView.bounds.width/3.6
-	//let cellHeight: CGFloat = 125
-	
-	
-	//let widths = self.view.frame.width
-	//view.frame.width / 3.6
-	
-	//let sizeofCell = CGSize(width: cellWidth, height: cellHeight) //25 points go to the product info (150)
-	return sizeofCell
+	//Search Button
+	@objc func handleAlert() {
+		
+		let alert = addedItemAlert()
+		alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+		self.present(alert, animated: true, completion: nil)
+		
 	}
-	*/
+	
+	
 	
 	//Space between rows
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

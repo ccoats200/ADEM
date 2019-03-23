@@ -85,11 +85,9 @@ class productVCLayout: UIViewController {
 	
 	let alwaysNotify: UIImageView = {
 		let noitfy = UIImageView()
-		noitfy.image = UIImage(named: "Check")
+		noitfy.image = UIImage(named: "fave")
 		noitfy.translatesAutoresizingMaskIntoConstraints = false
 		noitfy.contentMode = .scaleAspectFit
-		noitfy.backgroundColor = UIColor.blue
-		noitfy.layer.cornerRadius = 12.5
 		return noitfy
 	}()
 	
@@ -132,6 +130,7 @@ class productVCLayout: UIViewController {
 		return calories
 	}()
 
+	
 	//var cost = 2.99
 	
 	let priceLabel: UILabel = {
@@ -183,6 +182,7 @@ class productVCLayout: UIViewController {
 	}
 	
 	
+	
 	func setUpScrollView() {
 		scrolling.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
 		scrolling.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -196,8 +196,8 @@ class productVCLayout: UIViewController {
 		scrolling.addSubview(NurtritionLabel)
 		scrolling.addSubview(productImage)
 		//Adding subviews
-		scrolling.addSubview(alwaysNotify)
-		scrolling.addSubview(healthfFacts)
+		//scrolling.addSubview(alwaysNotify)
+		//scrolling.addSubview(healthfFacts)
 
 		scrolling.addSubview(calLabel)
 		scrolling.addSubview(priceLabel)
@@ -240,25 +240,45 @@ class productVCLayout: UIViewController {
 	
 	func setupproductInfoHolder() {
 		
+		
+		let healthInfoStackView = UIStackView(arrangedSubviews: [healthfFacts, alwaysNotify])
+		healthInfoStackView.contentMode = .scaleAspectFit
+		healthInfoStackView.translatesAutoresizingMaskIntoConstraints = false
+		healthInfoStackView.distribution = .fillEqually
+		
+		
+		scrolling.addSubview(healthInfoStackView)
+		
+		
 		productInfoHolder.topAnchor.constraint(equalTo: backgrounLightColor.bottomAnchor, constant: 5).isActive = true
 		productInfoHolder.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
 		productInfoHolder.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -50).isActive = true
 		productInfoHolder.heightAnchor.constraint(equalToConstant: 300).isActive = true
 		productInfoHolder.layer.cornerRadius = 10
 		
-		
+		/*
 		//nutrition labels
 		healthfFacts.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
 		healthfFacts.leftAnchor.constraint(equalTo: productInfoHolder.leftAnchor, constant: 10).isActive = true
 		healthfFacts.widthAnchor.constraint(equalToConstant: 25).isActive = true
 		healthfFacts.heightAnchor.constraint(equalToConstant: 25).isActive = true
 		
+		*/
 		
+		healthInfoStackView.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
+		healthInfoStackView.leadingAnchor.constraint(equalTo: productInfoHolder.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
+		healthInfoStackView.trailingAnchor.constraint(equalTo: productInfoHolder.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
+		//healthInfoStackView.widthAnchor.constraint(equalToConstant: 50).isActive = true
+		healthInfoStackView.heightAnchor.constraint(equalToConstant: 25).isActive = true
+		
+		/*
 		//nutrition labels
 		alwaysNotify.topAnchor.constraint(equalTo: productInfoHolder.topAnchor, constant: 5).isActive = true
 		alwaysNotify.rightAnchor.constraint(equalTo: productInfoHolder.rightAnchor, constant: -10).isActive = true
 		alwaysNotify.widthAnchor.constraint(equalToConstant: 25).isActive = true
 		alwaysNotify.heightAnchor.constraint(equalToConstant: 25).isActive = true
+		*/
+		
 		
 		//calories
 		calLabel.topAnchor.constraint(equalTo: alwaysNotify.bottomAnchor, constant: 5).isActive = true

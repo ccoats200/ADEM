@@ -14,6 +14,14 @@ import CoreBluetooth
 
 class ProductVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
+	/*
+	//for meal suggestion
+	var item = CurrentItemScreen
+	if meal.contains(item) {
+	takeTopThreeMostRelevant
+	}
+	*/
+	
 	
 	//Reuse ID's
 	let productForVC = "Product"
@@ -54,7 +62,7 @@ class ProductVC: UICollectionViewController, UICollectionViewDelegateFlowLayout 
 	
 	func setUpNavBarButto(){
 		
-		let statusImage = UIBarButtonItem(image: UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(home))
+		let statusImage = UIBarButtonItem(image: UIImage(named: "fave")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(home))
 		
 		
 		navigationItem.rightBarButtonItem = statusImage

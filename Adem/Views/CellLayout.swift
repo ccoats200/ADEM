@@ -324,11 +324,10 @@ class accountPrivacyCellDesign: CellBasics {
 		aPImages.image = UIImage(named: "Gear")
 		aPImages.contentMode = .scaleAspectFit
 		aPImages.clipsToBounds = true
-		aPImages.layer.cornerRadius = 15
 		aPImages.layer.masksToBounds = true
 		print("rounds the corners of the image view")
-		aPImages.layer.borderWidth = 2
-		aPImages.layer.borderColor = UIColor.rgb(red: 30, green: 188, blue: 29).cgColor
+		
+		aPImages.translatesAutoresizingMaskIntoConstraints = false
 		//aPImages.backgroundColor = UIColor.rgb(red: 241, green: 249, blue: 255)
 		
 		return aPImages
@@ -337,10 +336,14 @@ class accountPrivacyCellDesign: CellBasics {
 	let accountPrivacyLabels: UILabel = {
 		let aPLabels = UILabel()
 		aPLabels.textAlignment = .center
+		aPLabels.text = "Settings"
+		aPLabels.textColor
+			= UIColor.white
 		aPLabels.numberOfLines = 1
 		aPLabels.adjustsFontSizeToFitWidth = true
-		aPLabels.backgroundColor = UIColor.red
+		//aPLabels.backgroundColor = UIColor.red
 		aPLabels.font = UIFont.boldSystemFont(ofSize: 20)
+		aPLabels.translatesAutoresizingMaskIntoConstraints = false
 		print("sets the item name")
 		return aPLabels
 	}()
@@ -355,16 +358,14 @@ class accountPrivacyCellDesign: CellBasics {
 		print("adds the product name subview")
 		
 		
-		//Horizontral Constaints
-		addConstraintsWithFormats(format: "H:|[v0(75)]|", views: accountPrivacyImages)
+		accountPrivacyImages.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+		accountPrivacyImages.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 		
-		addConstraintsWithFormats(format: "H:|-8-[v0]-8-|", views: accountPrivacyLabels)
-		
-		
-		
-		
-		//Vertical Constraints
-		addConstraintsWithFormats(format: "V:|[v0(75)]-5-[v1(20)]|", views: accountPrivacyImages, accountPrivacyLabels)
+		accountPrivacyLabels.heightAnchor.constraint(equalToConstant: 20).isActive = true
+		accountPrivacyLabels.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+		accountPrivacyLabels.topAnchor.constraint(equalTo: accountPrivacyImages.bottomAnchor, constant: 10).isActive = true
+		accountPrivacyLabels.widthAnchor.constraint(equalTo: self.widthAnchor, constant: -50).isActive = true
+	
 		
 		
 	}

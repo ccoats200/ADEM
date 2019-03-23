@@ -47,9 +47,25 @@ class deviceContent: NSObject {
 	
 }
 
+struct thrownOutAlert: alertInformation {
+	
+	var alertProductName: String?
+	var alertProductImageName: String?
+	
+}
 
+
+//Alert Elements
+class thrownOut: NSObject {
+	
+	
+	var thrownItemImage: String?
+	var thrownItemName: String?
+}
 
 class accountContent: NSObject {
+	
+	
 	//	var docRef: DocumentReference!
 	//
 	//	docRef.getDocument(completion: { (docSnapshot, error) in

@@ -14,7 +14,7 @@ class TransitionCoordinator: NSObject, UINavigationControllerDelegate {
 	func navigationController(_ navigationController: UINavigationController,
 							  animationControllerFor operation: UINavigationController.Operation,
 							  from fromVC: UIViewController,
-							  to toVC: productVCLayout) -> UIViewControllerAnimatedTransitioning? {
+							  to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		return CircularTransition()
 	}
 

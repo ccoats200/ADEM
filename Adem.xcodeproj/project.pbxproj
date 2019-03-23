@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A0412C1319208DA6F55BEAC /* Pods_AdemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6992028EDFF3DC5B73CB68EC /* Pods_AdemTests.framework */; };
+		354415DF222DABFA00503756 /* Custom Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354415DE222DABFA00503756 /* Custom Alert.swift */; };
+		356F9136223481F30052C7C8 /* settingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356F9135223481F30052C7C8 /* settingVC.swift */; };
 		3574510A2224E718007CAAC5 /* Login Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357451092224E718007CAAC5 /* Login Screen.swift */; };
 		3574510C2224E734007CAAC5 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574510B2224E734007CAAC5 /* profileVC.swift */; };
 		3574510E2224E750007CAAC5 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574510D2224E750007CAAC5 /* ListVC.swift */; };
@@ -74,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354415DE222DABFA00503756 /* Custom Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Alert.swift"; sourceTree = "<group>"; };
+		356F9135223481F30052C7C8 /* settingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingVC.swift; sourceTree = "<group>"; };
 		357451092224E718007CAAC5 /* Login Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Screen.swift"; sourceTree = "<group>"; };
 		3574510B2224E734007CAAC5 /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		3574510D2224E750007CAAC5 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		357451242224E8D7007CAAC5 /* Design.Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.Elements.swift; sourceTree = "<group>"; };
 		357451262224E903007CAAC5 /* AppDelegateUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateUserLogin.swift; sourceTree = "<group>"; };
 		357451292224E92B007CAAC5 /* SignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo.swift; sourceTree = "<group>"; };
+		357A01F22241E55C00401AD1 /* Adem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Adem.entitlements; sourceTree = "<group>"; };
 		3582FD4722260F0C00CD24D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3582FD492226188100CD24D7 /* ItemVCLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVCLayout.swift; sourceTree = "<group>"; };
 		35AEB6792224DF020078AA98 /* Adem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +178,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		354415DD222DABDF00503756 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				354415DE222DABFA00503756 /* Custom Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		357451082224E705007CAAC5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +201,7 @@
 				3574511B2224E823007CAAC5 /* TestingAccount.swift */,
 				3574511D2224E867007CAAC5 /* ProductInfoVC.swift */,
 				3574511F2224E883007CAAC5 /* productCell.swift */,
+				356F9135223481F30052C7C8 /* settingVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +249,8 @@
 		35AEB67B2224DF020078AA98 /* Adem */ = {
 			isa = PBXGroup;
 			children = (
+				357A01F22241E55C00401AD1 /* Adem.entitlements */,
+				354415DD222DABDF00503756 /* Alert */,
 				35DA18CD222B4D9600A14340 /* Transition */,
 				357451282224E913007CAAC5 /* SignUp */,
 				357451212224E89F007CAAC5 /* Extensions */,
@@ -429,6 +445,11 @@
 				TargetAttributes = {
 					35AEB6782224DF020078AA98 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					35AEB68F2224DF040078AA98 = {
 						CreatedOnToolsVersion = 10.1;
@@ -605,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				357451122224E796007CAAC5 /* PantryVC.swift in Sources */,
+				356F9136223481F30052C7C8 /* settingVC.swift in Sources */,
 				35AEB6C12224E4F90078AA98 /* DataService.swift in Sources */,
 				35AEB6B62224E46A0078AA98 /* FirebaseFiles.swift in Sources */,
 				3582FD4A2226188100CD24D7 /* ItemVCLayout.swift in Sources */,
@@ -635,6 +657,7 @@
 				357451252224E8D7007CAAC5 /* Design.Elements.swift in Sources */,
 				357451142224E7A6007CAAC5 /* Meals.swift in Sources */,
 				3574512A2224E92B007CAAC5 /* SignUpInfo.swift in Sources */,
+				354415DF222DABFA00503756 /* Custom Alert.swift in Sources */,
 				357451162224E7C8007CAAC5 /* AccountVC.swift in Sources */,
 				35C4C8B12224E6120025186E /* CellLayout.swift in Sources */,
 				35DA18CF222B4DAC00A14340 /* Circle Trasition.swift in Sources */,
@@ -817,6 +840,7 @@
 			baseConfigurationReference = 774B5EB4FB94D8D433DE4DB0 /* Pods-Adem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N372M2L25B;
 				INFOPLIST_FILE = Adem/Info.plist;
@@ -826,6 +850,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Adem.co.Adem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -836,6 +861,7 @@
 			baseConfigurationReference = 9CC853A1B04CFD9FFB8D1F95 /* Pods-Adem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N372M2L25B;
 				INFOPLIST_FILE = Adem/Info.plist;
@@ -845,6 +871,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Adem.co.Adem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -899,6 +926,7 @@
 			baseConfigurationReference = BB3364FCAFFCF9E774BA88B2 /* Pods-AdemUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N372M2L25B;
 				INFOPLIST_FILE = AdemUITests/Info.plist;
@@ -909,6 +937,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Adem.co.AdemUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Adem;
@@ -920,6 +949,7 @@
 			baseConfigurationReference = E59A6AC73E7D7200BC29923A /* Pods-AdemUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N372M2L25B;
 				INFOPLIST_FILE = AdemUITests/Info.plist;
@@ -930,6 +960,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Adem.co.AdemUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Adem;

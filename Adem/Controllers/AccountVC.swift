@@ -12,8 +12,7 @@ import CoreBluetooth
 import Firebase
 import FirebaseFirestore
 
-
-
+//Decoration View for section background color
 //class SCSBCollectionViewLayoutAttributes : UICollectionViewLayoutAttributes {
 //
 //	var color: UIColor = UIColor.white
@@ -72,7 +71,7 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 		titleText.textColor = UIColor.white
 		navigationItem.titleView = titleText
 		
-		setUpNavBarButton()
+		//setUpNavBarButton()
 		
 		//Image cell
 		collectionView.register(profileImageCellLayout.self, forCellWithReuseIdentifier: cellId)
@@ -103,6 +102,7 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 		
 	}
 	let headerID = "test"
+	
 	/*
 	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 	var v : UICollectionReusableView! = nil
@@ -121,13 +121,14 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 	
 	*/
 	
-	
+	/*
 	func setUpNavBarButton() {
 		
 		
 		let searchImage = UIBarButtonItem(image: UIImage(named: "search")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleSearch))
 		navigationItem.rightBarButtonItem = searchImage
 	}
+	*/
 	
 	//Search Button
 	@objc func handleSearch() {
@@ -184,7 +185,7 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 	}()
 	
 	let collectionView: UICollectionView = { // collection view to be added to view controller
-		let cv = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()); //zero size with flow layout
+		let cv = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout());//zero size with flow layout
 		cv.translatesAutoresizingMaskIntoConstraints = false; //set it to false so that we can suppy constraints
 		cv.backgroundColor = .white // test
 		return cv
@@ -255,22 +256,16 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 				let accountInfo = collectionView.dequeueReusableCell(withReuseIdentifier: cellId4, for: indexPath) as! accountPrivacyCellDesign
 				
 				accountInfo.layer.borderWidth = 2
-				accountInfo.layer.borderColor = UIColor.blue.cgColor
-				//cell4.backgroundColor = UIColor.rgb(red: 241, green: 249, blue: 255)
+				accountInfo.layer.borderColor = UIColor.white.cgColor
 				accountInfo.backgroundColor = UIColor.blue
-				
 				accountInfo.layer.cornerRadius = 15
+			
 				
 				return accountInfo
 			} else {
 				let privacyInfo = collectionView.dequeueReusableCell(withReuseIdentifier: cellId4, for: indexPath) as! accountPrivacyCellDesign
 				
 				privacyInfo.accountPrivacyImages.image = UIImage(named: "lock")
-				//privacyInfo.accountPrivacyImages.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor).isActive = true
-				//privacyInfo.accountPrivacyImages.centerYAnchor.constraint(equalTo: collectionView.centerYAnchor).isActive = true
-				
-				//privacyInfo.layer.borderWidth = 2
-				//privacyInfo.layer.borderColor = UIColor.blue.cgColor
 				
 				privacyInfo.backgroundColor = UIColor.blue
 				
@@ -295,6 +290,18 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 		print("Settings Tab is active")
 	}
 	
+	@objc func handleSettings() {
+		
+		let cController = settings()
+		cController.hidesBottomBarWhenPushed = true
+		self.navigationController?.pushViewController(cController, animated: true)
+		
+		
+		print("Settings Tab is active")
+	}
+	
+	
+
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		
 		switch indexPath.section {
@@ -315,7 +322,7 @@ class AccountVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 		case 3:
 			
 			if indexPath.item == 0 {
-				handleProduct()
+				handleSettings()
 			} else {
 				handlePrivacy()
 			}

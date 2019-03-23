@@ -62,6 +62,16 @@ class tabBar: UITabBarController, UICollectionViewDelegateFlowLayout {
 		//mealsTabButton.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
 		mealsTabButton.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
 		
+		
+		
+		//Account
+		let accountController = AccountVC() //Meals(collectionViewLayout: layout)
+		let accountTabButton = UINavigationController(rootViewController: accountController)
+		accountTabButton.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "AccountIcon"), tag: 2)
+		accountTabButton.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+
+		
+		
 		//Navigation Items
 		navigationItem.title = "List"
 		navigationController?.navigationBar.isTranslucent = false
@@ -72,7 +82,7 @@ class tabBar: UITabBarController, UICollectionViewDelegateFlowLayout {
 		//Instantiation
 		//setUpTabBar()
 		
-		viewControllers = [listTabButton, pantryTabButton, mealsTabButton]
+		viewControllers = [listTabButton, pantryTabButton, mealsTabButton, accountTabButton]
 		
 		let isLoggedIn = true
 		

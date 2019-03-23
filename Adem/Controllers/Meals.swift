@@ -17,8 +17,6 @@ class Meals: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIS
 	
 	var products: [itemCellContent]? = {
 		var add = itemCellContent()
-		//add.itemImageName = "addButton"
-		
 		
 		var eggs = itemCellContent()
 		eggs.itemName = "Egg"
@@ -34,7 +32,6 @@ class Meals: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIS
 		test.itemName = "Strawberries"
 		test.itemImageName = "eggs"
 		test.Quantity = "10"
-		
 		
 		return [eggs, Toast, test]
 	}()
